@@ -136,7 +136,7 @@ remove_unavailable_cipher_suites(Suites) ->
 remove_unsafe_cipher_suites(Suites) ->
     [S || S <- Suites, is_safe_cipher_suite(S)].
 
-%% @doc Sort the cipher suite into a preferrable safe order.
+%% @doc Sort the cipher suite into a preferable safe order.
 sort_cipher_suites(Suites) ->
     lists:reverse(lists:sort(
                     fun(SuiteA, SuiteB) ->

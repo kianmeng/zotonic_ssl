@@ -66,7 +66,7 @@ To generate with a specific DH group:
 ok = zotonic_ssl_dhfile:ensure_dhfile("path/to/myfile.dh", ffdhe2048).
 ```
 
-Or, if no check on the existance of a valid DH file is needed:
+Or, if no check on the existence of a valid DH file is needed:
 
 ```erlang
 ok = zotonic_ssl_dhfile:write_dhfile("path/to/myfile.dh").
